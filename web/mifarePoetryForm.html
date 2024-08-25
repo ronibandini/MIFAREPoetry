@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIFARE RFID Poetry</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<table>
+<tr><td colspan=3><img src="images/mifarepoetry.jpg">
+</td></tr>
+<tr><td colspan=2>
+<br>
+    <form action="mifare.php" method="post">
+        <label for="line1">Line Block 1:</label>
+        <input type="text" id="line1" name="line1" required maxlength=16>
+
+        <label for="line2">Line Block 2:</label>
+        <input type="text" id="line2" name="line2" required maxlength=16>
+
+        <label for="line3">Line Block 3:</label>
+        <input type="text" id="line3" name="line3" required maxlength=16>
+
+	<label for="line3">Sector trailer:</label>
+        <input type="text" id="sectorTrailer" name="sectortrailer" value="FFFFFFFFFFFF|FF0780|FFFFFFFFFFFF">
+
+        <input type="hidden" name="mode" value="w"> 
+
+        <input type="submit" value="Write"> 
+
+        </form>
+
+</td>
+</tr>
+<tr>
+<td colspan=2>
+
+    <form action="mifare.php" method="post">
+    <input type="hidden" name="mode" value="r">       
+    <input type="hidden" name="line1" value="-">
+    <input type="hidden" name="line2" value="-">
+    <input type="hidden" name="line3" value="-">
+    <input type="submit" value="Read"> Switch to read mode
+
+    </form>
+</td>
+</tr>
+</table>
+
+
+<table>
+<tr><td colspan=2>
+<br>
+
+</td></tr>
+</table>
+
+
+</body>
+</html>
