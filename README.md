@@ -16,6 +16,9 @@ RFID RC522
 Adafruit Oled 128x32
 2 3d printed parts
 
+# 3d enclosure
+https://cults3d.com/en/3d-model/art/mifare-poetry-nfc-enclosure
+
 # Other requirements
 A web hosting with PHP support
 
