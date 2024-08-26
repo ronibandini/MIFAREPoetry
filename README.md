@@ -12,15 +12,18 @@ Rule #3 Every poem can only be read 3 times
 # Parts required
 
 Arduino UNO R4 WiFi
-RFID RC522
+RFID RC522 module
 Adafruit Oled 128x32
-2 3d printed parts
+3d printed enclosure
 
 # 3d enclosure
 https://cults3d.com/en/3d-model/art/mifare-poetry-nfc-enclosure
 
 # Other requirements
-A web hosting with PHP support
+A web hosting with PHP support. Optional for generative poetry: Python.
+
+# Demo
+https://www.tiktok.com/@ronibandini/video/7407427604963167494
 
 # Contact
 
