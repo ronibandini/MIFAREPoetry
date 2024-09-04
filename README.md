@@ -22,6 +22,14 @@ https://cults3d.com/en/3d-model/art/mifare-poetry-nfc-enclosure
 # Other requirements
 A web hosting with PHP support. Optional for generative poetry: Python.
 
+# Automatic poetry generator
+
+This repository also includes 2 scripts to generate MIFARE Poetry by combining words. 
+
+Standard version https://github.com/ronibandini/MIFAREPoetry/blob/main/generator/mifarepoetry1.py 
+
+Rhymed version https://github.com/ronibandini/MIFAREPoetry/blob/main/generator/mifarepoetry2.py 
+
 # Demo
 https://www.tiktok.com/@ronibandini/video/7407427604963167494
 
